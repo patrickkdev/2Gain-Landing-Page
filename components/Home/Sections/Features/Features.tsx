@@ -43,7 +43,7 @@ const features: Feature[] = [
 	{
 		title: "📊 Valores de Entrada Precisos",
 		subtitle:
-			"Obtenha informações sobre o desempenho do seu negócio e identifique quais produtos são mais populares entre seus clientes.",
+			"Obtenha valores precisos para cada operação, recuperando perdas e alcançando lucros com apenas duas vitórias consecutivas.",
 	},
 	{
 		title: "📈 Perfis Personalizados",
