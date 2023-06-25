@@ -6,6 +6,7 @@ const FloatingWhatsAppButton = () => {
 	return (
 		<div style={{ pointerEvents: "none", position: "fixed", bottom: "0px", right: "0px", padding: "24px" }}>
 			<IconButton
+				href={"https://wa.me/5531996442788"}
 				color="success"
 				sx={{
 					"&:hover": {

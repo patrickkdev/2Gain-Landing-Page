@@ -7,6 +7,12 @@
 	align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+	.headerMain {
+		min-height: calc(80vh - var(--navbar-height));
+	}
+}
+
 .navigateDown {
 	animation: navigateArrow 1s ease-out infinite;
 	position: sticky;
