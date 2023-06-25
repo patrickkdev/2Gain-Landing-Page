@@ -38,7 +38,7 @@ const plans: Plan[] = [
 			"✅ 19 opções de payout",
 		],
 		price: "R$ 187,00",
-		paymentFrequency: "/mês em até 12x",
+		paymentFrequency: "/ano em até 12x",
 	},
 ];
 
