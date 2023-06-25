@@ -1,0 +1,28 @@
+.contactUsMain {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.contactUsTitle {
+	text-align: center;
+	padding-bottom: 48px;
+}
+
+.contactUsCard {
+	transition: 0.5s ease-out;
+	text-align: center;
+	align-items: center;
+	height: 100%;
+	padding: 12px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 5px;
+	box-shadow: 15px 15px 24px rgba(0, 0, 0, 0.2);
+	background-color: white;
+}
+
+.contactUsCard:hover {
+	transform: scale(1.02);
+}

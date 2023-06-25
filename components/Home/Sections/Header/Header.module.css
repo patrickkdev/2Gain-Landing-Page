@@ -1,0 +1,64 @@
+.headerMain {
+	overflow-x: hidden;
+	padding: 24px 0px;
+	min-height: calc(100vh - var(--navbar-height));
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.navigateDown {
+	animation: navigateArrow 1s ease-out infinite;
+	position: sticky;
+	bottom: 64px;
+	left: 50%;
+}
+
+.navigateDown > svg {
+	color: black;
+}
+
+@keyframes navigateArrow {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-16px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.heroArea {
+	display: flex;
+	width: 100%;
+}
+
+.heroArea img {
+	transition: 0.5s ease-out;
+	width: 100%;
+}
+
+.heroArea img:hover {
+	transform: scale(1.02);
+}
+
+.heroInfo {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.heroAction {
+	margin-top: 24px;
+}
+
+.heroAction button {
+	font-weight: bold;
+}
+
+.heroImage {
+	width: 50%;
+}

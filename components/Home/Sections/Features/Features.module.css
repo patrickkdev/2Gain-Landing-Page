@@ -1,0 +1,27 @@
+.featuresMain {
+	overflow-x: hidden;
+	padding: 96px 12px;
+	min-height: calc(100vh - var(--navbar-height));
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.featuresTitle {
+	text-align: center;
+	margin-bottom: 96px;
+}
+
+.featureCard {
+	transition: 0.5s ease-out;
+
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 5px;
+}
+
+.featureCard:hover {
+	transform: scale(1.02);
+}

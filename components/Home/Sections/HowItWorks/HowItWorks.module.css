@@ -1,0 +1,41 @@
+.howItWorksMain {
+	display: flex;
+	flex-direction: column;
+}
+
+.howItWorksTitle {
+	min-height: calc(100vh - var(--navbar-height));
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.StepViewer {
+	padding: 96px 0px;
+	min-height: calc(100vh - var(--navbar-height));
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.navigateDown {
+	animation: navigateArrow 1s ease-out infinite;
+	margin-top: 98px;
+}
+
+.navigateDown svg {
+	color: black;
+}
+
+@keyframes navigateArrow {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-16px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
