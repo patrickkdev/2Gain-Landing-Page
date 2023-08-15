@@ -13,7 +13,7 @@ const AboutUs = () => {
 			<div className={styles.aboutUsTitle}>
 				<Container maxWidth={"md"}>
 					<Fade direction="up" triggerOnce>
-						<Typography variant={"h3"} fontWeight={"bold"} gutterBottom>
+						<Typography variant={"h1"} fontWeight={"bold"} gutterBottom>
 							Sobre a 2Gain 😊
 						</Typography>
 					</Fade>

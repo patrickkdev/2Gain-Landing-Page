@@ -48,10 +48,10 @@ const Pricing = () => {
 			<div className={styles.pricingTitle}>
 				<Container maxWidth={"md"}>
 					<Fade direction="up" triggerOnce>
-						<Typography variant={"h3"} fontWeight={"bold"} gutterBottom>
+						<Typography variant={"h1"} fontWeight={"bold"} gutterBottom>
 							Preço 🏷️
 						</Typography>
-						<Typography variant={"h6"}>Obtenha Acesso com uma Licença Após Experimentar Nosso Período de Teste Gratuito</Typography>
+						<Typography variant={"h5"}>Obtenha Acesso com uma Licença Após Experimentar Nosso Período de Teste Gratuito</Typography>
 					</Fade>
 				</Container>
 			</div>

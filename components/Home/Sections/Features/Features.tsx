@@ -41,19 +41,16 @@ const features: Feature[] = [
 	// Considerar // },
 
 	{
-		title: "📊 Valores de Entrada Precisos",
+		title: "✅ Valores de Entrada Precisos",
 		subtitle:
 			"Obtenha valores precisos para cada operação, recuperando perdas e alcançando lucros com apenas duas vitórias consecutivas.",
 	},
 	{
-		title: "📈 Perfis Personalizados",
+		title: "✅ Perfis Personalizados",
 		subtitle:
-			"Escolha um plano que esteja alinhado com seus objetivos e capital disponível, seguindo as orientações da ferramenta para cada entrada no mercado.",
+			"Escolha um perfil que esteja alinhado com suas metas e saldo disponível, seguindo as orientações da ferramenta para cada entrada no mercado.",
 	},
-	{
-		title: "💬 Cálculos em Tempo Real",
-		subtitle: "Tome decisões informadas com base em cálculos em tempo real que levam em consideração seu saldo e trades anteriores.",
-	},
+	
 ];
 
 const Features = () => {
@@ -61,26 +58,26 @@ const Features = () => {
 		<div className={styles.featuresMain}>
 			<div className={styles.featuresTitle}>
 				<Container maxWidth={"md"}>
-					<Fade direction="up" triggerOnce>
-						<Typography variant={"h3"} fontWeight={"bold"} gutterBottom>
-							Alguns recursos ⚙️
+					<Fade direction="up" triggerOnce >
+						<Typography variant={"h1"} fontWeight={"bold"} gutterBottom>
+							Tenha o Controle das suas Operações com Estes Recursos ⚙️
 						</Typography>
-						<Typography variant={"h6"}>Tenha o Controle das suas Operações com Estes Recursos Poderosos</Typography>
+						
 					</Fade>
 				</Container>
 			</div>
 
 			<Container maxWidth={"xl"}>
-				<Grid justifyContent={"center"} container spacing={4}>
+				<Grid justifyContent={"space-evenly"} container spacing={4}>
 					{features.map((feature, index) => {
 						return (
 							<Grid item key={index} xl={4} lg={4} md={4} sm={6} xs={12}>
 								<Fade direction="up" style={{ height: "100%" }} triggerOnce delay={100 * index}>
 									<div className={styles.featureCard}>
-										<Typography variant={"h6"} fontWeight={"bold"} gutterBottom>
+										<Typography variant={"h4"} fontWeight={"bold"} marginBottom={"48px"}>
 											{feature.title}
 										</Typography>
-										<Typography gutterBottom>{feature.subtitle}</Typography>
+										<Typography variant="h6" gutterBottom>{feature.subtitle}</Typography>
 									</div>
 								</Fade>
 							</Grid>
