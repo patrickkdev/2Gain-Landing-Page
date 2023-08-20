@@ -25,7 +25,7 @@ const CallToAction = () => {
 				<Fade direction="up" triggerOnce>
 					<Container maxWidth={"lg"}>
 						<div className={styles.callToActionTitleText}>
-							<Typography variant={"h3"} fontSize={"1.8rem"} fontWeight={"bold"} sx={{ mb: "24px" }}>
+							<Typography variant={"h1"}  fontWeight={"bold"} sx={{ mb: "24px" }}>
 								<Typewriter words={phrases} loop={true} cursor={true} typeSpeed={45} deleteSpeed={35} delaySpeed={4000} />
 							</Typography>
 						</div>
