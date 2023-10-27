@@ -21,7 +21,7 @@ const plans: Plan[] = [
 		icon: "🥉",
 		title: "Periodo Gratuito",
 		features: [
-			"⚠️ Use por 7 dias",
+			"⚠️ Use por 2 dias",
 			"✅ Acesse no PC e no Celular Android",
 			"✅ 11 opções de perfil de gestão",
 			"✅ 19 opções de payout",
