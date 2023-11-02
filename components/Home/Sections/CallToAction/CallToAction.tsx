@@ -30,7 +30,7 @@ const CallToAction = () => {
 							</Typography>
 						</div>
 						<Button
-							href={"../static/downloadable/Calculadora Financeira 2Gain.exe"}
+							href={"../static/downloadable/2Gain - Calculadora Financeira.exe"}
 							download
 							variant="contained"
 							size="large"

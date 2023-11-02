@@ -54,7 +54,7 @@ const Header = () => {
 									<Grid container spacing={"12px"}  justifyContent={"center"}>
 										<Grid item  xl={6} lg={6} md={6} sm={12}>
 											<Button
-												href={"../static/downloadable/Calculadora Financeira 2Gain.exe"}
+												href={"../static/downloadable/2Gain - Calculadora Financeira.exe"}
 												download
 												variant="contained"
 												size="large"
@@ -63,7 +63,7 @@ const Header = () => {
 												Baixar no Windows
 											</Button>
 										</Grid>
-										<Grid item  xl={6} lg={6} md={6} sm={12}>
+										{/* <Grid item  xl={6} lg={6} md={6} sm={12}>
 											<Button
 												href="../static/downloadable/Calculadora Financeira 2Gain.apk"
 												download
@@ -73,7 +73,7 @@ const Header = () => {
 												endIcon={<Download sx={{ color: "white",  }} />}>
 												Baixar no Android
 											</Button>
-										</Grid>
+										</Grid> */}
 									</Grid>
 								</Container>
 							</div>
