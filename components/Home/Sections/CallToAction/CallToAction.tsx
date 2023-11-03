@@ -29,14 +29,26 @@ const CallToAction = () => {
 								<Typewriter words={phrases} loop={true} cursor={true} typeSpeed={45} deleteSpeed={35} delaySpeed={4000} />
 							</Typography>
 						</div>
-						<Button
-							href={"../static/downloadable/2Gain - Calculadora Financeira.exe"}
-							download
-							variant="contained"
-							size="large"
-							endIcon={<Download sx={{ color: "white" }} />}>
-							Baixe agora
-						</Button>
+
+						<div style={{ display: "flex", gap:"12px", justifyContent: "center" }}>
+							<Button
+								href={"../static/downloadable/2Gain - Calculadora Financeira.exe"}
+								download
+								variant="contained"
+								size="large"
+								endIcon={<Download sx={{ color: "white" }} />}>
+								Baixe agora
+							</Button>
+							<Button
+								href="https://2gain.netlify.app/"
+								target="_blank"
+								rel="noreferrer"
+								variant="contained"
+								size="large"
+								endIcon={<KeyboardArrowRight sx={{ color: "white" }} />}>
+								Use na Web
+							</Button>
+						</div>
 					</Container>
 				</Fade>
 			</div>

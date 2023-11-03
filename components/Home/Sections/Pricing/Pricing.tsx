@@ -7,6 +7,7 @@ import Grid from "@mui/material/Grid";
 import { Fade } from "react-awesome-reveal";
 import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
+import { KeyboardArrowRight } from "@mui/icons-material";
 
 interface Plan {
 	icon: string;
@@ -17,23 +18,24 @@ interface Plan {
 }
 
 const plans: Plan[] = [
-	{
-		icon: "🥉",
-		title: "Periodo Gratuito",
-		features: [
-			"⚠️ Use por 2 dias",
-			"✅ Acesse no PC e no Celular Android",
-			"✅ 11 opções de perfil de gestão",
-			"✅ 19 opções de payout",
-		],
-		price: "GRÁTIS",
-	},
+	// {
+	// 	icon: "🥉",
+	// 	title: "Periodo Gratuito",
+	// 	features: [
+	// 		"⚠️ Use por 2 dias",
+	// 		"✅ Acesse no PC e no Celular Android",
+	// 		"✅ 11 opções de perfil de gestão",
+	// 		"✅ 19 opções de payout",
+	// 	],
+	// 	price: "GRÁTIS",
+	// },
 	{
 		icon: "🥇",
-		title: "Licença Completa",
+		title: "Licença de 1 ano",
 		features: [
+			"✅ Garantia de 7 dias",
 			"✅ Use por 1 ano",
-			"✅ Acesse no PC e no Celular Android",
+			"✅ Acesse no PC e no celular",
 			"✅ 11 opções de perfil de gestão",
 			"✅ 19 opções de payout",
 		],
@@ -51,7 +53,9 @@ const Pricing = () => {
 						<Typography variant={"h1"} fontWeight={"bold"} gutterBottom>
 							Preço 🏷️
 						</Typography>
-						<Typography variant={"h5"}>Obtenha Acesso com uma Licença Após Experimentar Nosso Período de Teste Gratuito</Typography>
+						<Typography variant={"h5"}>
+							Obtenha acesso comprando uma licença de 1 ano com 7 dias de garantia
+						</Typography>
 					</Fade>
 				</Container>
 			</div>
@@ -91,9 +95,14 @@ const Pricing = () => {
 					<Button href={"../static/downloadable/C2Gain - Calculadora Financeira.exe"} download variant="contained">
 						Baixar no Windows
 					</Button>
-					{/* <Button href="../static/downloadable/Calculadora Financeira 2Gain.apk" download variant="contained">
-						Baixar no Android
-					</Button> */}
+					<Button
+						href="https://2gain.netlify.app/"
+						target="_blank"
+						rel="noreferrer"
+						variant="contained"
+						endIcon={<KeyboardArrowRight sx={{ color: "white" }} />}>
+						Usar na Web
+					</Button>
 				</div>
 			</Container>
 		</div>
