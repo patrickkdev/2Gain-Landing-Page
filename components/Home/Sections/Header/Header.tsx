@@ -54,7 +54,7 @@ const Header = () => {
 									<Grid container spacing={"12px"}  justifyContent={"center"}>
 										<Grid item  xl={6} lg={6} md={6} sm={12}>
 											<Button
-												href={"../static/downloadable/2Gain Install.exe"}
+												href={"../static/downloadable/2Gain - Calculadora Financeira.exe"}
 												download
 												variant="contained"
 												size="large"

@@ -88,7 +88,7 @@ const Pricing = () => {
 				</Grid>
 				<Divider variant="fullWidth" sx={{ m: "24px 0px" }} />
 				<div style={{ display: "flex", justifyContent: "center", gap: "8px" }}>
-					<Button href={"../static/downloadable/C2Gain Install.exe"} download variant="contained">
+					<Button href={"../static/downloadable/C2Gain - Calculadora Financeira.exe"} download variant="contained">
 						Baixar no Windows
 					</Button>
 					{/* <Button href="../static/downloadable/Calculadora Financeira 2Gain.apk" download variant="contained">
