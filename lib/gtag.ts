@@ -38,7 +38,7 @@ export function gtag_report_conversion(url: string) {
   };
 
   window.gtag('event', 'conversion', {
-    'send_to': `${GADS_TRACKING_ID}/qqODCPHYhvgYEN_GvvQp`,
+    'send_to': `${GADS_TRACKING_ID}/R81nCNm3qvkYEN_GvvQp`,
     'event_callback': callback,
   });
 
