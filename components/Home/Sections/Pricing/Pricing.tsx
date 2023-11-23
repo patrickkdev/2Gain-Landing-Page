@@ -35,13 +35,10 @@ const plans: Plan[] = [
 	// },
 	{
 		icon: "🥇",
-		title: "Licença de 1 ano",
+		title: "Licença Completa",
 		features: [
-			"✅ Garantia de 7 dias",
-			"✅ Use por 1 ano",
-			"✅ Acesse no PC e no celular",
+			"✅ Acesso no PC e no navegador",
 			"✅ 11 opções de perfil de gestão",
-			"✅ 19 opções de payout",
 		],
 		price: "R$ 187,00",
 		installmentPrice: "R$ 18,77",
@@ -61,7 +58,7 @@ const Pricing = () => {
 							Preço 🏷️
 						</Typography>
 						<Typography variant={"h5"}>
-							Obtenha acesso comprando uma licença de 1 ano com 7 dias de garantia
+							Obtenha acesso comprando uma licença
 						</Typography>
 					</Fade>
 				</Container>
@@ -120,7 +117,7 @@ const Pricing = () => {
 				<Container maxWidth="md" sx={{ mt: "24px", padding: 0 }}>
 					<Fade direction="up" triggerOnce delay={100 * (plans.length + 2)}	>
 						<div className={styles.pricingCard}>
-						<Typography sx={{fontSize: "1px", mb: "12px"}} textAlign={"center"}>Após efetuar o pagamento, o acesso à ferramenta é liberado automaticamente. Basta acessar a plataforma e fornecer as informações necessárias para começar a usá-la.</Typography>
+							<Typography sx={{fontSize: "1px", mb: "12px"}} textAlign={"center"}>Após efetuar o pagamento, o acesso à ferramenta é liberado automaticamente. Basta acessar a plataforma e fornecer as informações necessárias para começar a usá-la.</Typography>
 							<Typography sx={{fontSize: "1px"}} textAlign={"center"}>Contate-nos para mais informações através do <a target="_blank" rel="noreferrer" href={`https://wa.me/${55319964442788}`}>WhatsApp</a></Typography>
 						</div>
 					</Fade>
