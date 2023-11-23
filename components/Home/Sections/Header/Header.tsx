@@ -46,7 +46,7 @@ const Header = () => {
 								Gerenciamento de Bancas em Opções Binárias 🚀
 							</Typography>
 							<Typography variant="h5">
-								A chave para o sucesso reside em estratégias de gerenciamento sólidas e eficazes.
+								A chave para o sucesso reside em uma estratégia de gerenciamento sólida e eficaz.
 								{/* <span id="highlight">se mantenha à frente da concorrência</span>. */}
 							</Typography>
 							<div className={styles.heroAction}>
