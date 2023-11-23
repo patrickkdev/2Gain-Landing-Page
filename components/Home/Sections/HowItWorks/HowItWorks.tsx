@@ -20,18 +20,18 @@ const steps: Step[] = [
 	{
 		title: "Configuração",
 		description: [
-			"Defina seu capital, escolha o número desejado de oportunidades e ajuste o payout de acordo com a oferta da sua corretora.",
+			"Configure seu capital inicial, escolha o número desejado de oportunidades e ajuste o payout conforme as condições da corretora. Com essas configurações, a ferramenta gera automaticamente os valores de entrada.",
 		],
 		image: "static/images/step1.jpg",
 	},
 	{
 		title: "Siga as Orientações",
-		description: ["A 2Gain fornece valores de entrada precisos. Faça a entrada no mercado com a quantia sugerida para cada trade."],
+		description: ["Opere com a quantia indicada para cada operação. Quando a operação terminar, basta clicar nos botões de 'gain' ou 'loss' de acordo com o resultado. A ferramenta irá então, exibir o valor calculado para a próxima operação."],
 		image: "static/images/step2.jpg",
 	},
 	{
-		title: "Acompanhe seus Resultados",
-		description: ["Acompanhe suas operações, clicando no botão verde para uma vitória e no botão vermelho para uma derrota."],
+		title: "Opere com confiança",
+		description: ["Observe que ao acertar duas operações consecutivas, você não apenas recupera as perdas anteriores, mas também alcança um ganho financeiro."],
 		image: "static/images/step3.jpg",
 	},
 ];
@@ -66,8 +66,14 @@ const HowItWorks = () => {
 							<Typography variant={"h1"} fontWeight={"bold"} marginBottom={"48px"}>
 								Como Funciona ❓
 							</Typography>
-							<Typography variant={"h3"}>
-								Passos Simples para <span id="highlight">Aumentar o seu Sucesso nas Operações</span>
+							
+							<Typography variant={"h6"} textAlign={"left"} gutterBottom>
+								A ferramenta opera ajustando gradualmente os valores de entrada, assegurando que, <span id="highlight">ao acertar duas operações</span> consecutivas, o investidor <span id="highlight">não apenas recupere as perdas anteriores, mas também alcance um ganho financeiro</span>. Esse método estabelece uma <span id="highlight">abordagem disciplinada e estratégica</span> para enfrentar desafios no dinâmico mercado de opções.
+								Essa ferramenta representa uma <span id="highlight">aliada inestimável</span> para os investidores, <span id="highlight">proporcionando uma variedade de vantagens.</span> Em primeiro lugar, ela facilita uma <span id="highlight">gestão mais eficaz do capital</span>, permitindo que o usuário <span id="highlight">opere com confiança, mesmo em períodos de sequências negativas.</span> Além disso, a automação dos cálculos não apenas economiza tempo, mas também minimiza o risco de erros humanos, conferindo uma <span id="highlight">abordagem mais precisa e disciplinada.</span>
+							</Typography>
+							
+							<Typography variant={"h1"} fontWeight={"bold"} marginTop={"98px"}>
+								Veja Passos Simples para <span id="highlight">Começar a Usar</span>
 							</Typography>
 						</Fade>
 						<div id="navigate-down-arrow" className={styles.navigateDown}>
@@ -89,7 +95,6 @@ const HowItWorks = () => {
 										marginBottom="60px"
 										flexDirection="column"
 										justifyContent="center"
-										
 										item
 										xl={6}
 										lg={6}
@@ -118,7 +123,7 @@ const HowItWorks = () => {
 										</Fade>
 									</Grid>
 									<Grid display="flex" flexDirection="column" justifyContent="center" item xl={6} lg={6} md={6} sm={12} xs={12}>
-										<img style={{ height: "150%", borderRadius: "12px" }} src={step.image} alt={step.image} />
+										<img style={{ height: "auto", width: "100%", borderRadius: "12px" }} src={step.image} alt={step.image} />
 									</Grid>
 								</Grid>
 							</div>

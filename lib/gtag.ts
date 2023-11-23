@@ -1,4 +1,5 @@
-export const GA_TRACKING_ID = "AW-11250148191"
+export const GA_TRACKING_ID = "G-C7TX0YVEWM"
+export const GADS_TRACKING_ID = "AW-11250148191"
 
 declare global {
   interface Window {
@@ -27,4 +28,19 @@ export const event = ({ action, category, label, value }: Event) => {
     event_label: label,
     value: value,
   })
+}
+
+export function gtag_report_conversion(url: string) {
+  var callback = function () {
+    if (typeof(url) !== 'undefined') {
+      window.location.href = url; // Assuming 'url' is a string
+    }
+  };
+
+  window.gtag('event', 'conversion', {
+    'send_to': `${GADS_TRACKING_ID}/qqODCPHYhvgYEN_GvvQp`,
+    'event_callback': callback,
+  });
+
+  return false;
 }

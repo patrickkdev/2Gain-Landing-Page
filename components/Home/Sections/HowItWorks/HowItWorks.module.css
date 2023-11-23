@@ -1,4 +1,5 @@
 .howItWorksMain {
+	padding: 24px;
 	display: flex;
 	flex-direction: column;
 }
@@ -21,7 +22,7 @@
 
 .navigateDown {
 	animation: navigateArrow 1s ease-out infinite;
-	margin-top: 98px;
+	margin-top: 64px;
 }
 
 .navigateDown svg {

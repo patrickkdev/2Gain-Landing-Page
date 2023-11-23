@@ -46,7 +46,7 @@ const Header = () => {
 								Gerenciamento de Bancas em Opções Binárias 🚀
 							</Typography>
 							<Typography variant="h5">
-								Recupere suas Perdas, Alcance suas Metas e <span id="highlight">Maximize seus Lucros</span>
+								A chave para o sucesso reside em estratégias de gerenciamento sólidas e eficazes.
 								{/* <span id="highlight">se mantenha à frente da concorrência</span>. */}
 							</Typography>
 							<div className={styles.heroAction}>
@@ -79,6 +79,7 @@ const Header = () => {
 								</Container>
 							</div>
 						</div>
+						<Typography textAlign={"center"} sx={{mt: "48px"}} variant="h5" gutterBottom>Exemplo Prático de Utilização</Typography>
 						<div style={{ position: "relative", paddingRight: "100%", paddingBottom: "56.25%" }}>
 							<iframe
 								src={"https://www.youtube.com/embed/XTF_BWvg6hk"}
@@ -89,7 +90,6 @@ const Header = () => {
 								allowFullScreen
 							/>
 						</div>
-						{/* <img src="/images/home/menu.png" alt="dashboard" /> */}
 					</div>
 				</Container>
 			</div>

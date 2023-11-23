@@ -16,20 +16,43 @@ interface FAQ {
 	answer: string;
 }
 
-const faq: FAQ[] = [
-	{
-		question: "A 2Gain é adequada para iniciantes?",
-		answer: "Sim! A 2Gain foi projetada para ser fácil de usar, não exigindo conhecimento técnico avançado.",
-	},
-	{
-		question: "Posso usar a 2Gain com diferentes moedas?",
-		answer: "Sim, a 2Gain suporta várias moedas. Basta ajustar os valores de acordo com sua preferência.",
-	},
-	{
-		question: "Quantas perdas consecutivas posso recuperar com a 2Gain?",
-		answer: "Com a 2Gain, você pode recuperar até 17 perdas consecutivas ao vencer apenas dois trades.",
-	},
+// Expanded FAQ based on the provided information
+
+const faq = [
+  {
+    question: "Como funciona o acesso após o pagamento?",
+    answer: "Após efetuar o pagamento, o acesso à ferramenta é liberado automaticamente. Basta acessar a plataforma e fornecer as informações necessárias para começar a usá-la.",
+  },
+  {
+    question: "Como obtenho suporte?",
+    answer: "Para obter suporte, você pode entrar em contato via WhatsApp botão no canto inferior direito da tela.",
+  },
+  {
+    question: "Posso solicitar reembolso?",
+    answer: "Sim, é possível solicitar reembolso nos primeiros 7 dias, caso decida desistir da compra.",
+  },
+  {
+    question: "O que está incluído na licença de 1 ano?",
+    answer: "A licença de 1 ano inclui o uso da ferramenta por esse período, acesso tanto no PC quanto no celular, 11 opções de perfil de gestão e 19 opções de payout.",
+  },
+  {
+    question: "Qual é o custo da licença?",
+    answer: "A licença de 1 ano está disponível por 12x R$ 18,77/ano.",
+  },
+  {
+    question: "A 2Gain é adequada para iniciantes?",
+    answer: "Sim! A 2Gain foi projetada para ser fácil de usar, não exigindo conhecimento técnico avançado.",
+  },
+  {
+    question: "Posso usar a 2Gain com diferentes moedas?",
+    answer: "Sim, a 2Gain pode ser usada com todas as moedas. Basta que a corretora ofereça um payout acima de 82%.",
+  },
+  {
+    question: "Quais são os benefícios da ferramenta?",
+    answer: "Eficácia da ferramenta em tornar o processo de cálculos mais fácil e livre de preocupações, permitindo maior foco, tranquilidade e precisão nas operações. Além disso, a 2Gain transformou a maneira como alguns usuários operam, ajudando-os a gerenciar suas entradas de forma inteligente e minimizar os riscos, resultando em resultados consistentes e maior confiança nas negociações.",
+  },
 ];
+
 
 const FAQ = () => {
 	return (

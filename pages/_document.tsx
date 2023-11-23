@@ -12,20 +12,27 @@ export default function Document() {
 					rel="stylesheet"
 				/>
 
+				{/* <!-- Google Analytics Setup --> */}
+				<script async src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}/>
 				<script
           dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
+						__html: `
+						window.dataLayer = window.dataLayer || [];
+		
+						function gtag(){dataLayer.push(arguments);}
+						gtag('js', new Date());
+						gtag('config', '${gtag.GA_TRACKING_ID}', {
+							page_path: window.location.pathname,
+						});
 
-              gtag('config', '${gtag.GA_TRACKING_ID}', {
-                page_path: window.location.pathname,
-              });
+						gtag('config', '${gtag.GADS_TRACKING_ID}', {
+							page_path: window.location.pathname,
+						});
+						
+						window.gtag = gtag;
             `,
           }}
-        />
-				<script async src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}></script>
+				/>
 			</Head>
 			<body>
 				<Main />

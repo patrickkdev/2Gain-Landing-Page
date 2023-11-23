@@ -14,8 +14,19 @@ import CallToAction from "@/components/Home/Sections/CallToAction/CallToAction";
 
 import styles from "@/styles/Home.module.css";
 import Navbar from "@/components/Home/Navbar/Navbar";
+import { useRouter } from "next/router";
+import scrollTo from "@/utils/scroll-to";
 
 export default function Home() {
+
+	const { section } = useRouter().query;
+
+	React.useEffect(() => {
+		if (section) {
+			scrollTo(`#${section}`);
+		}
+	}, [section])
+
 	return (
 		<>
 			<Head>
@@ -31,9 +42,9 @@ export default function Home() {
 							<Navbar />
 							<Header />
 						</section>
-						<section id="features-snap">
+						{/* <section id="features-snap">
 							<Features />
-						</section>
+						</section> */}
 						<HowItWorks />
 						<section id="pricing-snap">
 							<Pricing />

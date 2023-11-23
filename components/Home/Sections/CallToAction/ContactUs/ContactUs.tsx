@@ -40,7 +40,7 @@ const info: Info[] = [
 			/>
 		),
 		title: "E-mail:",
-		content: "ccompoundmanager@gmail.com",
+		content: "patrick8q@gmail.com",
 	},
 	{
 		icon: (

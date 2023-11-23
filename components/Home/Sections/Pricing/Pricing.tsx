@@ -8,13 +8,17 @@ import { Fade } from "react-awesome-reveal";
 import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
 import { KeyboardArrowRight } from "@mui/icons-material";
+import { gtag_report_conversion } from "@/lib/gtag";
 
 interface Plan {
 	icon: string;
 	title: string;
 	features: string[];
 	price: string;
-	paymentFrequency?: string;
+	paymentFrequency: string;
+	installmentPrice: string;
+	maxInstallments: number;
+	purchaseLink: string;
 }
 
 const plans: Plan[] = [
@@ -40,7 +44,10 @@ const plans: Plan[] = [
 			"✅ 19 opções de payout",
 		],
 		price: "R$ 187,00",
-		paymentFrequency: "/ano em até 12x",
+		installmentPrice: "R$ 18,77",
+		maxInstallments: 12,
+		paymentFrequency: "ano",
+		purchaseLink: "https://pay.kiwify.com.br/lyHcuQn"
 	},
 ];
 
@@ -66,7 +73,7 @@ const Pricing = () => {
 							<Grid item key={index} xl={4} md={6} sm={12} xs={12}>
 								<Fade direction="up" delay={100 * index} triggerOnce>
 									<div className={styles.pricingCard}>
-										<Typography fontSize="32px" gutterBottom>
+										<Typography variant="h1" gutterBottom>
 											{plan.icon}
 										</Typography>
 										<Typography variant="h5" fontWeight={"bold"} gutterBottom>
@@ -80,30 +87,44 @@ const Pricing = () => {
 											);
 										})}
 
-										<Typography variant="h4" fontWeight={"bold"} marginY="12px">
-											{plan.price}
-											<span style={{ opacity: 0.6, fontSize: "20px" }}>{plan.paymentFrequency}</span>
+										<Typography marginY="12px">
+											Apenas 
 										</Typography>
+										<Typography variant="h1" fontWeight={"bold"}>
+											<span style={{ opacity: 0.6, fontSize: "16px" }}>{plan.maxInstallments}x </span>
+											{plan.installmentPrice}
+											<span style={{ opacity: 0.6, fontSize: "16px" }}>/{plan.paymentFrequency}</span>
+										</Typography>
+
+										<Divider variant="fullWidth" sx={{ m: "12px 0px" }} />
+										<Button
+											variant="contained"
+											size="large"
+											fullWidth
+											onClick={() => {
+												gtag_report_conversion(plan.purchaseLink);
+											}}
+											href={plan.purchaseLink}
+											target="_blank"
+											rel="noreferrer"
+											endIcon={<KeyboardArrowRight />}
+										>
+											EU QUERO
+										</Button>
 									</div>
 								</Fade>
 							</Grid>
 						);
 					})}
 				</Grid>
-				<Divider variant="fullWidth" sx={{ m: "24px 0px" }} />
-				<div style={{ display: "flex", justifyContent: "center", gap: "8px" }}>
-					<Button href={"../static/downloadable/C2Gain - Calculadora Financeira.exe"} download variant="contained">
-						Baixar no Windows
-					</Button>
-					<Button
-						href="https://2gain.netlify.app/"
-						target="_blank"
-						rel="noreferrer"
-						variant="contained"
-						endIcon={<KeyboardArrowRight sx={{ color: "white" }} />}>
-						Usar na Web
-					</Button>
-				</div>
+				<Container maxWidth="md" sx={{ mt: "24px", padding: 0 }}>
+					<Fade direction="up" triggerOnce delay={100 * (plans.length + 2)}	>
+						<div className={styles.pricingCard}>
+						<Typography sx={{fontSize: "1px", mb: "12px"}} textAlign={"center"}>Após efetuar o pagamento, o acesso à ferramenta é liberado automaticamente. Basta acessar a plataforma e fornecer as informações necessárias para começar a usá-la.</Typography>
+							<Typography sx={{fontSize: "1px"}} textAlign={"center"}>Contate-nos para mais informações através do <a target="_blank" rel="noreferrer" href={`https://wa.me/${55319964442788}`}>WhatsApp</a></Typography>
+						</div>
+					</Fade>
+				</Container>
 			</Container>
 		</div>
 	);

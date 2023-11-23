@@ -1,0 +1,1 @@
+export default function scrollTo (section: string) {	document.querySelector(section)?.scrollIntoView({ behavior: "smooth" }) };
