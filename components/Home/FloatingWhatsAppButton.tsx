@@ -1,3 +1,4 @@
+import { gtag_report_conversion } from "@/lib/gtag";
 import { WhatsApp } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
 import React from "react";
@@ -6,6 +7,9 @@ const FloatingWhatsAppButton = () => {
 	return (
 		<div style={{ pointerEvents: "none", position: "fixed", bottom: "0px", right: "0px", padding: "24px" }}>
 			<IconButton
+				onClick={() => {
+					gtag_report_conversion(window.location.href, "7wR9CKGn4foYEJDvlcgq");
+				}}
 				rel="noreferrer"
 				target="_blank"
 				href={"https://wa.me/5531996442788"}

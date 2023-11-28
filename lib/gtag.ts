@@ -1,5 +1,5 @@
 export const GA_TRACKING_ID = "G-C7TX0YVEWM"
-export const GADS_TRACKING_ID = "AW-11250148191"
+export const GADS_TRACKING_ID = "AW-11425642384"
 
 declare global {
   interface Window {
@@ -30,7 +30,9 @@ export const event = ({ action, category, label, value }: Event) => {
   })
 }
 
-export function gtag_report_conversion(url: string) {
+export function gtag_report_conversion(url: string, converstionId: string) {
+  console.log("reporting conversion")
+  
   var callback = function () {
     if (typeof(url) !== 'undefined') {
       window.location.href = url; // Assuming 'url' is a string
@@ -38,8 +40,7 @@ export function gtag_report_conversion(url: string) {
   };
 
   window.gtag('event', 'conversion', {
-    'send_to': `${GADS_TRACKING_ID}/R81nCNm3qvkYEN_GvvQp`,
-    'event_callback': callback,
+    'send_to': `${GADS_TRACKING_ID}/${converstionId}`,
   });
 
   return false;

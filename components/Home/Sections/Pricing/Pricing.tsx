@@ -19,6 +19,7 @@ interface Plan {
 	installmentPrice: string;
 	maxInstallments: number;
 	purchaseLink: string;
+	conversionId: string;
 }
 
 const plans: Plan[] = [
@@ -44,7 +45,8 @@ const plans: Plan[] = [
 		installmentPrice: "R$ 18,77",
 		maxInstallments: 12,
 		paymentFrequency: "ano",
-		purchaseLink: "https://pay.kiwify.com.br/lyHcuQn"
+		purchaseLink: "https://pay.kiwify.com.br/lyHcuQn",
+		conversionId: "sxZuCMyz3_oYEJDvlcgq",
 	},
 ];
 
@@ -99,7 +101,7 @@ const Pricing = () => {
 											size="large"
 											fullWidth
 											onClick={() => {
-												gtag_report_conversion(plan.purchaseLink);
+												gtag_report_conversion(window.location.href, plan.conversionId);
 											}}
 											href={plan.purchaseLink}
 											target="_blank"
