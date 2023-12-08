@@ -1,0 +1,44 @@
+.blog-post {
+  h1 {
+    margin: 24px 0;
+  }
+
+  p {
+    line-height: 1.6;
+    margin: 24px 0;
+  }
+
+  h2 {
+    margin-top: 24px
+  }
+
+  h3 {
+    
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  div#video {
+    position: relative; 
+    padding-right: 100%;
+    padding-bottom: 56.25%;
+
+    & iframe {
+      position: absolute;
+      top: 0; 
+      left: 0;
+    }
+  }
+}
+
+.default {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5rem;
+}
