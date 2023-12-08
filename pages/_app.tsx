@@ -28,10 +28,10 @@ export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<>
 			<Head>
-				<title>Gerenciamento de banca</title>
+				<title>2Gain - Gerenciamento de banca para opções binárias</title>
 				<meta name="description" content="Gerenciamento de banca para opções binárias" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<link rel="icon" href="/icon.png" />
+				<link rel="icon" href="/icon.ico" />
 			</Head>
 			<ThemeProvider theme={lightTheme}>
 				<CssBaseline />

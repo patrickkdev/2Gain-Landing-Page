@@ -9,6 +9,7 @@ import { Fade } from "react-awesome-reveal";
 import Hidden from "@mui/material/Hidden";
 import { ArrowDownward } from "@mui/icons-material";
 import IconButton from "@mui/material/IconButton";
+import Link from "next/link";
 
 interface Step {
 	title: string;
@@ -71,8 +72,14 @@ const HowItWorks = () => {
 								A ferramenta opera ajustando gradualmente os valores de entrada, assegurando que, <span id="highlight">ao acertar duas operações</span> consecutivas, o investidor <span id="highlight">não apenas recupere as perdas anteriores, mas também alcance um ganho financeiro</span>. Esse método estabelece uma <span id="highlight">abordagem disciplinada e estratégica</span> para enfrentar desafios no dinâmico mercado de opções.
 								Essa ferramenta representa uma <span id="highlight">aliada inestimável</span> para os investidores, <span id="highlight">proporcionando uma variedade de vantagens.</span> Em primeiro lugar, ela facilita uma <span id="highlight">gestão mais eficaz do capital</span>, permitindo que o usuário <span id="highlight">opere com confiança, mesmo em períodos de sequências negativas.</span> Além disso, a automação dos cálculos não apenas economiza tempo, mas também minimiza o risco de erros humanos, conferindo uma <span id="highlight">abordagem mais precisa e disciplinada.</span>
 							</Typography>
+
+							<Typography marginTop={"48px"} gutterBottom>Leia os artigos</Typography>
+
+							<Link style={{fontSize: "0.8rem", textDecoration: "none"}} href="/blog/erros-comuns-no-trading-de-opcoes-binarias-e-como-um-gerenciamento-de-banca-solido-pode-ajudar">Erros Comuns no Trading de Opções Binárias e Como um Gerenciamento de Banca Sólido Pode Ajudar</Link>
+							<Link style={{fontSize: "0.8rem", textDecoration: "none"}} href="/blog/o-cLinklculo-por-tras-do-2gain">O Cálculo por Trás do 2Gain: Compreendendo o Algoritmo</Link>
+							<Link style={{fontSize: "0.8rem", textDecoration: "none"}} href="/blog/o-poder-da-disciplina-no-trading">O Poder da Disciplina no Trading</Link>
 							
-							<Typography variant={"h1"} fontWeight={"bold"} marginTop={"98px"}>
+							<Typography variant={"h1"} fontWeight={"bold"} marginTop={"48px"}>
 								Veja Passos Simples para <span id="highlight">Começar a Usar</span>
 							</Typography>
 						</Fade>
