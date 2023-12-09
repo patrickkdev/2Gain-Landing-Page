@@ -16,7 +16,7 @@ const Blog = () => {
     }
 
     try {
-      const htmlContent = require(`!raw-loader!../../blog-posts/${blogId}.html`).default
+      const htmlContent = require(`!raw-loader!/public/static/blog-posts/${blogId}.html`).default
       setBlogPost(htmlContent)
     } catch (e) {
       console.error(e)
