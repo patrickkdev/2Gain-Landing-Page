@@ -1,14 +1,29 @@
+import React from 'react'
+
 import Navbar from '@/components/Home/Navbar/Navbar';
 import Container from '@mui/material/Container';
+import Head from 'next/head';
+
 import { useRouter } from 'next/router';
-import React, {lazy} from 'react'
 
 const Blog = () => {
 
   const router = useRouter()
   const { blogId } = router.query
 
+  const [pageTitle, setPageTitle] = React.useState<string | undefined>(undefined)
   const [blogPost, setBlogPost] = React.useState<string | undefined>(undefined)
+  const ref = React.useRef<HTMLDivElement>(null)
+
+  React.useEffect(() => {
+    if (!ref.current) {
+      return
+    }
+
+    const title = ref.current.querySelector('h1')?.textContent
+
+    if (title) setPageTitle(title)
+  }, [blogPost])
 
   React.useEffect(() => {
     if (!blogId) {
@@ -32,12 +47,17 @@ const Blog = () => {
   }
 
   return (
-    <div className={"indexPage"}>
-      <Navbar />
-      <Container maxWidth="lg">
-        <div className={"blog-post"} dangerouslySetInnerHTML={{__html: blogPost}}/>
-      </Container>
-    </div>
+    <>
+      <Head>  
+        <title>{pageTitle}abc</title>
+      </Head>
+      <div className={"indexPage"}>
+        <Navbar />
+        <Container maxWidth="lg">
+          <div ref={ref} className={"blog-post"} dangerouslySetInnerHTML={{__html: blogPost}}/>
+        </Container>
+      </div>
+    </>
   )
 }
 
