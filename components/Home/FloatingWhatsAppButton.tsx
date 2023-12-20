@@ -16,7 +16,7 @@ const FloatingWhatsAppButton = () => {
 				}}
 				rel="noreferrer"
 				target="_blank"
-				href={"https://wa.me/5531996442788"}
+				href={"https://wa.me/5531971114423"}
 				color="success"
 				sx={{
 					"&:hover": {
